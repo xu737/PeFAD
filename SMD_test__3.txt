@@ -1,136 +1,0 @@
-nohup: ignoring input
-start time： 2024-02-07 21:34
-------SMD----------
-devices: ['3', '2', '1', '0']
-Args in experiment:
-Namespace(activation='gelu', anomaly_ratio=0.5, batch_size=64, c_out=38, checkpoints='./checkpoints/', client_nums=14, connection_ratio=0.8, consis_loss_coef=10, continue_training=0, d_ff=1280, d_layers=1, d_model=1280, data='SMD', data_path='ETTh1.csv', dec_in=7, des='test', device_ids=[3, 2, 1, 0], devices='3,2,1,0', distil=True, dropout=0.1, dvices='3,2,1,0', e_layers=2, effi_layer=3, embed='timeF', enc_in=38, factor=1, features='M', freq='h', full_tuning=0, gpt='True', gpt_layers=8, gpu=1, is_training=1, itr=1, latent_dim=16, learning_rate=0.0001, ln=0, local_bs=32, local_epoch=1, loss='MSE', lradj='type1', mask_factor=1.5, mask_ratio=0.2, mlp=0, model='GPT4TS', model_id='SMD', moving_avg=25, n_heads=8, num_kernels=6, num_workers=10, output_attention=False, p_hidden_dims=[128, 128], p_hidden_layers=2, patch_len=10, patch_stride=10, patience=3, percent=5, percentile=10, root_path='/home/data/xrh/FL/AD_FL/dataset/SMD', seq_len=100, shared_size=100, target='OT', task_name='anomaly_detection', test_path='', top_k=5, train_epochs=4, train_path='', use_amp=False, use_gpu=True, use_multi_gpu=False, vae_local_epochs=10, vae_train_epochs=1, weight=0, weight_residual=0.2, weight_similarity=0.8)
-Use GPU: cuda:1
-efficient-tuning
----3---
->>>>>>>forming dataset : SMD_GPT4TS_True-gpt_0.2-ratio_0-full_tuning_3-effi>>>>>>>>>>>>>>>>>>>>>>>>>>
-Shared data Epoch [10/10],client_1  Loss: 0.6336
-Shared data Epoch [10/10],client_2  Loss: 0.9305
-Shared data Epoch [10/10],client_3  Loss: 1.2829
-Shared data Epoch [10/10],client_4  Loss: 0.8559
-Shared data Epoch [10/10],client_5  Loss: 0.7502
-Shared data Epoch [10/10],client_6  Loss: 0.7224
-Shared data Epoch [10/10],client_7  Loss: 1.1872
-Shared data Epoch [10/10],client_8  Loss: 0.6477
-Shared data Epoch [10/10],client_9  Loss: 1.1082
-Shared data Epoch [10/10],client_10  Loss: 0.9760
-Shared data Epoch [10/10],client_11  Loss: 0.7563
-Shared data Epoch [10/10],client_12  Loss: 0.8074
-Shared data Epoch [10/10],client_13  Loss: 0.7388
-Shared data Epoch [10/10],client_14  Loss: 0.5452
-torch.Size([14, 100, 38])
-Total size of shared_dataset_tensor: 0.20 MB or 212856 bytes
-cost time: 145.97617650032043
->>>>>>>start training : SMD_GPT4TS_True-gpt_0.2-ratio_0-full_tuning_3-effi>>>>>>>>>>>>>>>>>>>>>>>>>>
-======================TRAIN MODE======================
-
- | Global Training Round : 1 |
-
-client_1, Local Epoch: 1, Steps: 14 | Train Loss: 0.3450690 Vali Loss: 0.1093733
-client_2, Local Epoch: 1, Steps: 14 | Train Loss: 0.4895756 Vali Loss: 0.2444438
-client_3, Local Epoch: 1, Steps: 14 | Train Loss: 0.3123509 Vali Loss: 0.0905918
-client_4, Local Epoch: 1, Steps: 14 | Train Loss: 0.2334981 Vali Loss: 0.6105467
-client_5, Local Epoch: 1, Steps: 14 | Train Loss: 0.3178736 Vali Loss: 0.2469029
-client_6, Local Epoch: 1, Steps: 14 | Train Loss: 0.2714092 Vali Loss: 0.0237443
-client_7, Local Epoch: 1, Steps: 14 | Train Loss: 0.5111839 Vali Loss: 0.2850610
-client_8, Local Epoch: 1, Steps: 14 | Train Loss: 0.3052854 Vali Loss: 0.2740817
-client_9, Local Epoch: 1, Steps: 14 | Train Loss: 0.4135751 Vali Loss: 0.4496985
-client_10, Local Epoch: 1, Steps: 14 | Train Loss: 0.4245214 Vali Loss: 0.0354455
-client_11, Local Epoch: 1, Steps: 14 | Train Loss: 0.3116277 Vali Loss: 0.2474376
-client_12, Local Epoch: 1, Steps: 14 | Train Loss: 0.3732611 Vali Loss: 0.0904989
-client_13, Local Epoch: 1, Steps: 14 | Train Loss: 0.2737447 Vali Loss: 0.0858278
-client_14, Local Epoch: 1, Steps: 14 | Train Loss: 0.2733706 Vali Loss: 0.2178292
-Global Epoch: 1 cost time: 233.91802263259888
-Saving model ...
-
- | Global Training Round : 2 |
-
-client_1, Local Epoch: 1, Steps: 14 | Train Loss: 0.2250228 Vali Loss: 0.0825901
-client_2, Local Epoch: 1, Steps: 14 | Train Loss: 0.2576341 Vali Loss: 1.5143450
-client_3, Local Epoch: 1, Steps: 14 | Train Loss: 0.1832585 Vali Loss: 0.0587432
-client_4, Local Epoch: 1, Steps: 14 | Train Loss: 0.1961951 Vali Loss: 1.5786014
-client_5, Local Epoch: 1, Steps: 14 | Train Loss: 0.2284235 Vali Loss: 0.2247965
-client_6, Local Epoch: 1, Steps: 14 | Train Loss: 0.1701177 Vali Loss: 0.0227686
-client_7, Local Epoch: 1, Steps: 14 | Train Loss: 0.2053646 Vali Loss: 0.1214518
-client_8, Local Epoch: 1, Steps: 14 | Train Loss: 0.2711042 Vali Loss: 2.1661954
-client_9, Local Epoch: 1, Steps: 14 | Train Loss: 0.5705554 Vali Loss: 0.5798776
-client_10, Local Epoch: 1, Steps: 14 | Train Loss: 0.3300174 Vali Loss: 0.0372898
-client_11, Local Epoch: 1, Steps: 14 | Train Loss: 0.2359526 Vali Loss: 0.1880350
-client_12, Local Epoch: 1, Steps: 14 | Train Loss: 0.3885172 Vali Loss: 0.0847202
-client_13, Local Epoch: 1, Steps: 14 | Train Loss: 0.1760759 Vali Loss: 0.0965916
-client_14, Local Epoch: 1, Steps: 14 | Train Loss: 0.1825054 Vali Loss: 0.1754739
-Global Epoch: 2 cost time: 232.80051112174988
-Saving model ...
-
- | Global Training Round : 3 |
-
-client_1, Local Epoch: 1, Steps: 14 | Train Loss: 0.2227489 Vali Loss: 0.0810990
-client_2, Local Epoch: 1, Steps: 14 | Train Loss: 0.2260340 Vali Loss: 1.3791879
-client_3, Local Epoch: 1, Steps: 14 | Train Loss: 0.1671599 Vali Loss: 0.0789945
-client_4, Local Epoch: 1, Steps: 14 | Train Loss: 0.1617985 Vali Loss: 0.5183404
-client_5, Local Epoch: 1, Steps: 14 | Train Loss: 0.2084205 Vali Loss: 0.2250974
-client_6, Local Epoch: 1, Steps: 14 | Train Loss: 0.1707304 Vali Loss: 0.0252898
-client_7, Local Epoch: 1, Steps: 14 | Train Loss: 0.1860508 Vali Loss: 0.1512843
-client_8, Local Epoch: 1, Steps: 14 | Train Loss: 0.2051550 Vali Loss: 0.3701318
-client_9, Local Epoch: 1, Steps: 14 | Train Loss: 0.2816815 Vali Loss: 0.4274901
-client_10, Local Epoch: 1, Steps: 14 | Train Loss: 0.3072855 Vali Loss: 0.0350925
-client_11, Local Epoch: 1, Steps: 14 | Train Loss: 0.5472001 Vali Loss: 0.2025663
-client_12, Local Epoch: 1, Steps: 14 | Train Loss: 0.2376959 Vali Loss: 0.0844091
-client_13, Local Epoch: 1, Steps: 14 | Train Loss: 0.1540691 Vali Loss: 0.0757010
-client_14, Local Epoch: 1, Steps: 14 | Train Loss: 0.1611132 Vali Loss: 0.1702414
-Global Epoch: 3 cost time: 232.99749946594238
-Saving model ...
-
- | Global Training Round : 4 |
-
-client_1, Local Epoch: 1, Steps: 14 | Train Loss: 0.2046077 Vali Loss: 0.0738524
-client_2, Local Epoch: 1, Steps: 14 | Train Loss: 0.3495731 Vali Loss: 1.2888629
-client_3, Local Epoch: 1, Steps: 14 | Train Loss: 0.1485815 Vali Loss: 0.0817671
-client_4, Local Epoch: 1, Steps: 14 | Train Loss: 0.2052716 Vali Loss: 0.4334188
-client_5, Local Epoch: 1, Steps: 14 | Train Loss: 0.1934295 Vali Loss: 0.1883182
-client_6, Local Epoch: 1, Steps: 14 | Train Loss: 0.1348023 Vali Loss: 0.0236762
-client_7, Local Epoch: 1, Steps: 14 | Train Loss: 0.1892877 Vali Loss: 0.1204820
-client_8, Local Epoch: 1, Steps: 14 | Train Loss: 0.2279757 Vali Loss: 0.3868987
-client_9, Local Epoch: 1, Steps: 14 | Train Loss: 0.3063071 Vali Loss: 2.0812714
-client_10, Local Epoch: 1, Steps: 14 | Train Loss: 0.2852441 Vali Loss: 0.0371862
-client_11, Local Epoch: 1, Steps: 14 | Train Loss: 0.2759924 Vali Loss: 0.7923682
-client_12, Local Epoch: 1, Steps: 14 | Train Loss: 0.1825415 Vali Loss: 0.0824499
-client_13, Local Epoch: 1, Steps: 14 | Train Loss: 0.1410104 Vali Loss: 0.0787497
-client_14, Local Epoch: 1, Steps: 14 | Train Loss: 0.1467971 Vali Loss: 0.1643417
-Global Epoch: 4 cost time: 231.96876573562622
-Saving model ...
-Total train time: 941.1888337135315
->>>>>>>testing : SMD_GPT4TS_True-gpt_0.2-ratio_0-full_tuning_3-effi<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-======================TEST MODE======================
-stastic on the train set:   0%|          | 0/14 [00:00<?, ?client/s]stastic on the train set:   7%|▋         | 1/14 [00:07<01:34,  7.24s/client]stastic on the train set:  14%|█▍        | 2/14 [00:14<01:28,  7.39s/client]stastic on the train set:  21%|██▏       | 3/14 [00:21<01:19,  7.27s/client]stastic on the train set:  29%|██▊       | 4/14 [00:28<01:12,  7.21s/client]stastic on the train set:  36%|███▌      | 5/14 [00:36<01:05,  7.24s/client]stastic on the train set:  43%|████▎     | 6/14 [00:43<00:57,  7.22s/client]stastic on the train set:  50%|█████     | 7/14 [00:50<00:50,  7.19s/client]stastic on the train set:  57%|█████▋    | 8/14 [00:57<00:42,  7.13s/client]stastic on the train set:  64%|██████▍   | 9/14 [01:04<00:35,  7.12s/client]stastic on the train set:  71%|███████▏  | 10/14 [01:11<00:28,  7.15s/client]stastic on the train set:  79%|███████▊  | 11/14 [01:19<00:21,  7.27s/client]stastic on the train set:  86%|████████▌ | 12/14 [01:26<00:14,  7.21s/client]stastic on the train set:  93%|█████████▎| 13/14 [01:34<00:07,  7.30s/client]stastic on the train set: 100%|██████████| 14/14 [01:41<00:00,  7.37s/client]stastic on the train set: 100%|██████████| 14/14 [01:41<00:00,  7.25s/client]
-cost time: 101.56503486633301
-find the threshold:   0%|          | 0/14 [00:00<?, ?client/s]find the threshold:   7%|▋         | 1/14 [00:01<00:22,  1.76s/client]find the threshold:  14%|█▍        | 2/14 [00:03<00:21,  1.79s/client]find the threshold:  21%|██▏       | 3/14 [00:05<00:19,  1.77s/client]find the threshold:  29%|██▊       | 4/14 [00:07<00:17,  1.78s/client]find the threshold:  36%|███▌      | 5/14 [00:08<00:15,  1.77s/client]find the threshold:  43%|████▎     | 6/14 [00:10<00:14,  1.76s/client]find the threshold:  50%|█████     | 7/14 [00:12<00:12,  1.77s/client]find the threshold:  57%|█████▋    | 8/14 [00:14<00:10,  1.77s/client]find the threshold:  64%|██████▍   | 9/14 [00:15<00:08,  1.78s/client]find the threshold:  71%|███████▏  | 10/14 [00:17<00:07,  1.76s/client]find the threshold:  79%|███████▊  | 11/14 [00:19<00:05,  1.76s/client]find the threshold:  86%|████████▌ | 12/14 [00:21<00:03,  1.77s/client]find the threshold:  93%|█████████▎| 13/14 [00:23<00:01,  1.77s/client]find the threshold: 100%|██████████| 14/14 [00:24<00:00,  1.76s/client]find the threshold: 100%|██████████| 14/14 [00:24<00:00,  1.77s/client]
-SMD_Thresholds:{'client_1': 2.7451931083202403, 'client_2': 3.561824477911037, 'client_3': 1.3728199601173476, 'client_4': 1.1639264357090033, 'client_5': 3.739025371074689, 'client_6': 1.2679457235336307, 'client_7': 11.85012289047248, 'client_8': 4.704199211597446, 'client_9': 6.648575663566596, 'client_10': 7.364165742397484, 'client_11': 3.06909414291382, 'client_12': 2.7738955438137602, 'client_13': 1.9436540704965757, 'client_14': 3.2943861305713953}
-Maximum value: 11.85012289047248 -- Minimum value: 1.1639264357090033 -- Mean value: 3.9642020337496784
-Variance: 7.983962230893684
-Threshold: 3.181740136742608
-cost time: 25.002907514572144
-evaluation:   0%|          | 0/14 [00:00<?, ?client/s]evaluation: 100%|██████████| 14/14 [00:00<00:00, 6953.26client/s]
-cost time: 0.0024535655975341797
-client_1  --Accuracy : 0.9952, Precision : 0.6954, Recall : 0.9928, F-score : 0.8179 
-client_2  --Accuracy : 0.9960, Precision : 0.8924, Recall : 0.9853, F-score : 0.9365 
-client_3  --Accuracy : 0.9965, Precision : 0.8836, Recall : 0.9796, F-score : 0.9291 
-client_4  --Accuracy : 0.9965, Precision : 0.9573, Recall : 0.9306, F-score : 0.9438 
-client_5  --Accuracy : 0.9948, Precision : 0.9555, Recall : 0.9780, F-score : 0.9666 
-client_6  --Accuracy : 0.9952, Precision : 0.9405, Recall : 0.9120, F-score : 0.9260 
-client_7  --Accuracy : 0.9957, Precision : 0.9888, Recall : 0.9588, F-score : 0.9736 
-client_8  --Accuracy : 0.9962, Precision : 0.9696, Recall : 0.9846, F-score : 0.9770 
-client_9  --Accuracy : 0.9833, Precision : 0.8160, Recall : 0.6795, F-score : 0.7415 
-client_10  --Accuracy : 0.9934, Precision : 0.7515, Recall : 0.9438, F-score : 0.8368 
-client_11  --Accuracy : 0.9965, Precision : 0.9481, Recall : 1.0000, F-score : 0.9734 
-client_12  --Accuracy : 0.9969, Precision : 0.9223, Recall : 0.9866, F-score : 0.9534 
-client_13  --Accuracy : 0.9923, Precision : 0.8460, Recall : 0.9461, F-score : 0.8933 
-client_14  --Accuracy : 0.9949, Precision : 0.8603, Recall : 0.9857, F-score : 0.9187 
-Mean Accuracy: 0.9945, Mean Precision: 0.8877, Mean Recall: 0.9474,Mean rou_auc: 0.9719  Mean F-score: 0.9134
-cost time: 0.5927693843841553
-Total test time: 128.55813837051392
-Finish time： 2024-02-07 21:34
