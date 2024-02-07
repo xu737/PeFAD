@@ -15,7 +15,7 @@ echo '------SMD----------'
 python -u run.py \
 --task_name anomaly_detection \
 --is_training 1 \
---root_path /home/data/xrh/FL/AD_FL/dataset/SMD \
+--root_path dataset/SMD \
 --model_id SMD \
 --model GPT4TS \
 --data SMD \
