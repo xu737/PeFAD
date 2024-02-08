@@ -19,7 +19,7 @@ pip install -r requirements.txt
 - NASA's Mars Science Laboratory (MSL) dataset, collected during the spacecraft's journey to Mars, is a valuable resource accessible through NASA-designated data centers. You can learn about it from [Detecting Spacecraft Anomalies Using LSTMs and Nonparametric Dynamic Thresholding](https://arxiv.org/pdf/1802.04431.pdf).
 
 
-### Train and evaluate
+### Train and Evaluate
 You can reproduce the experiment results as follows:
 ```
 bash ./scripts/SMD.sh
