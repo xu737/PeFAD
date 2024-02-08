@@ -1,4 +1,4 @@
-# PeFAD
+# Parameter-Efficient Federated Anomaly Detection Framework (PeFAD)
 # Get Start
 ### Environment
 - **Python Version**: 3.8
