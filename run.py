@@ -18,7 +18,7 @@ random.seed(fix_seed)
 torch.manual_seed(fix_seed)
 np.random.seed(fix_seed)
 
-parser = argparse.ArgumentParser(description='TimesNet')
+parser = argparse.ArgumentParser()
 
 parser.add_argument('--client_nums', type=int, required=True, default=28, help='num of clients')
 parser.add_argument('--local_bs', type=int, required=True, default=256, help='local batch size')
