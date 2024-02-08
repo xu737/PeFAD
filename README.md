@@ -1,4 +1,4 @@
-# Parameter-Efficient Federated Anomaly Detection Framework (PeFAD)
+# PeFAD: A Parameter-Efficient Federated Framework for Time Series Anomaly Detection (under review)
 # Get Start
 ### Environment
 - **Python Version**: 3.8
