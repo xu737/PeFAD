@@ -260,7 +260,7 @@ class Exp_Anomaly_Detection(Exp_Basic):
             # avg_state_dict = {}
             # fed_avg_freqs = fed_weight
             # for key in state_dicts[0].keys():
-            #     avg_state_dict[key] = state_dicts[0][key] * fed_avg_freqs[0]  #先加入第一个client 初始化
+            #     avg_state_dict[key] = state_dicts[0][key] * fed_avg_freqs[0]  
 
             # state_dicts = state_dicts[1:]
             # fed_avg_freqs = fed_avg_freqs[1:]
@@ -287,7 +287,7 @@ class Exp_Anomaly_Detection(Exp_Basic):
             print('loading model')
 
             state_dict_lis = []
-            for i in range(2,3):  # 假设有1到4的pth文件
+            for i in range(2,3):  
                 pth_filename = f'checkpoint{i}_' + str(self.args.mask_ratio) +'.pth'
                 pth_path = os.path.join(self.args.test_path, pth_filename)
                 state_dict_lis.append(pth_path)
@@ -520,7 +520,7 @@ class Exp_Anomaly_Detection(Exp_Basic):
             thresholds = {client_id: np.percentile(combined_energy[client_id], 100 - self.args.anomaly_ratio)
                 for client_id in combined_energy.keys()}
             
-            # print("Thresholds :", thresholds)   #不同客户端的阈值差别比较大？
+            # print("Thresholds :", thresholds)  
             print(f"{self.args.model_id}_Thresholds:{thresholds}")
 
             all_thresholds = list(thresholds.values())
@@ -627,7 +627,7 @@ class Exp_Anomaly_Detection(Exp_Basic):
         _,vae_local_optimizer = self._select_optimizer()
         shared_dataset_start_time = time.time()
         vae_model_list = {}
-        for global_epoch in range(self.args.vae_train_epochs):   #每轮
+        for global_epoch in range(self.args.vae_train_epochs):   
             if global_epoch == 0:
                     self.global_vae_model = self.vae_local_model
                     global_state_dict = self.global_vae_model.state_dict()
@@ -658,7 +658,6 @@ class Exp_Anomaly_Detection(Exp_Basic):
                         vaeloss = vae_loss(self.vae_local_model, inputs, outputs, z_mean, z_log_var)
                         input_size = self.original_dim
                         distribute_loss = wasserstein_distance(inputs, input_size,outputs) #
-                        # distribute_loss2 = nn.functional.kl_div(outputs.flatten().log(), inputs.flatten(), reduction='mean') #加了这个loss会变nan
                         
                         mutual_information = manual_info_los1s(inputs, outputs)
                       
@@ -706,9 +705,9 @@ class Exp_Anomaly_Detection(Exp_Basic):
             print(shared_dataset_tensor.shape) #torch.Size([10, 100, 38])
         
         total_size_bytes = sys.getsizeof(shared_dataset_tensor.storage())
-            # 将字节数转换为 MB 或 B
-        total_size_mb = total_size_bytes / (1024 ** 2)  # 转换为 MB
-        total_size_b = total_size_bytes  # 保留字节单位
+           
+        total_size_mb = total_size_bytes / (1024 ** 2)  
+        total_size_b = total_size_bytes  
         print(f"Total size of shared_dataset_tensor: {total_size_mb:.2f} MB or {total_size_b} bytes")
 
         print('cost time:', time.time() - shared_dataset_start_time)
