@@ -1,11 +1,12 @@
 # PeFAD: A Parameter-Efficient Federated Framework for Time Series Anomaly Detection (Under Review)
 # Get Start
 ### Environment
-- **Python Version**: 3.8
-- **PyTorch Version**: 1.7.1
-```shell
-pip install -r requirements.txt
-```
+- Python Version: 3.8
+- PyTorch Version: 1.7.1
+- Run the following script for environment configuration:
+  ```shell
+  pip install -r requirements.txt
+  ```
 ### Datasets
 #### SMD
 - Server Machine Dataset (SMD) is a 5-week-long dataset collected from a large Internet company with a time granularity of 1 minute. You can learn about it from 
