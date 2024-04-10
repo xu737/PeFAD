@@ -23,7 +23,7 @@ _SMD_, _PSM_, _SWaT_, and _MSL_ can be downloaded from [Google Drive](https://dr
 
 
 ### Train and Evaluate
-You can reproduce the experiment results as follows:
+You can reproduce the experiment results by running each script in ```./scripts/```:
 ```
 bash ./scripts/SMD.sh
 bash ./scripts/PSM.sh
