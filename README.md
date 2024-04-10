@@ -8,7 +8,7 @@
   pip install -r requirements.txt
   ```
 ### Datasets
-_SMD_, _PSM_, _SWaT_, and _MSL_ can be downloaded from [Google Drive]([https://drive.google.com/drive/folders/1ZOYpTUa82_jCcxIdTmyr0LXQfvaM9vIy](https://drive.google.com/drive/folders/1gisthCoE-RrKJ0j3KPV7xiibhHWT9qRm))
+_SMD_, _PSM_, _SWaT_, and _MSL_ can be downloaded from [Google Drive]([https://drive.google.com/drive/folders/1ZOYpTUa82_jCcxIdTmyr0LXQfvaM9vIy](https://drive.google.com/drive/folders/1gisthCoE-RrKJ0j3KPV7xiibhHWT9qRm)
 
 #### SMD
 - Server Machine Dataset (SMD) is a 5-week-long dataset collected from a large Internet company with a time granularity of 1 minute. You can learn about it from 
