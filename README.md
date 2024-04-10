@@ -10,7 +10,7 @@
 ### Datasets
 _SMD_, _PSM_, _SWaT_, and _MSL_ can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1gisthCoE-RrKJ0j3KPV7xiibhHWT9qRm).
 
-#### Dataset Details
+#### Biref Dataset Details
 - Server Machine Dataset (SMD) is a 5-week-long dataset collected from a large Internet company with a time granularity of 1 minute. Please refer to 
 [Robust Anomaly Detection for Multivariate Time Series through Stochastic Recurrent Neural Network](https://netman.aiops.org/wp-content/uploads/2019/08/OmniAnomaly_camera-ready.pdf).
 
