@@ -1,4 +1,7 @@
-### Response to C2 of Reviewer oEFN: Dataset
+## Additional Response to Reviewer oEFN
+
+**Cons 2: Dataset**
+
 (1) The 4 datasets that we adopted are widely used by existing works, sourced from diverse real-world domains, covering internet data (SMD), server operational data (PSM), infrastructure system (SWaT), and monitoring events (MSL).
 
 (2) We have added an experiment on a new UCR Dataset (KDD21 cup) with 250 types of time series from various domains. The main results below regarding F1-Score indicate that PeFAD outperforms baselines by at least 22.8%.
@@ -7,16 +10,16 @@
 | --- | --- | --- | --- |
 | 61.7 | 63.6 | 64.6 | 87.4 |
 
-### Minor Details
-
-**M1 & M3**
-We will update the reference for GPT2 and change the colors in Fig 3.
-
+**Minor Details**
 **M2: autoML**
 
 We adopt FL to address privacy issues where local data is not allowed to be shared, while AutoML typically doesn't tackle this issue.
 
-### Other Additional Experiments
+**M1 & M3: GPT2 reference and Fig 3**
+
+We will update the reference for GPT2 and change the colors in Fig 3.
+
+## Other Additional Experiments
 The result on the UCR dataset is shown as follows.
 
 |         | AUC   | F1-Score |
