@@ -1,9 +1,14 @@
-
+### C2 of Reviewer oEFN
 (1) The 4 datasets that we adopted are widely used by existing works, sourced from diverse real-world domains, covering internet data (SMD), server operational data (PSM), infrastructure system (SWaT), and monitoring events (MSL).
 
-(2) We have added an experiment on a new UCR Dataset (KDD21 cup) with 250 types of time series from various domains. The main results of the F1-Score below indicates that PeFAD outperforms baselines by at least 22.8%.
+(2) We have added an experiment on a new UCR Dataset (KDD21 cup) with 250 types of time series from various domains. The main results of the F1-Score below indicate that PeFAD outperforms baselines by at least 22.8%.
 
-The result on UCR dataset is shown as follow.
+| AT | FPT | TimsNet | PeFAD |
+| --- | --- | --- | --- |
+| 61.7 | 63.6 | 64.6 | 87.4 |
+
+### Other additional experiments
+The result on the UCR dataset is shown as follows.
 
 |         | AUC   | F1-Score |
 | ------- | ----- | -------- |
