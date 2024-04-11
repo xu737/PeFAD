@@ -17,7 +17,7 @@ We adopt FL to address privacy issues where local data is not allowed to be shar
 
 **M1 & M3: GPT2 reference and Fig 3**
 
-We will update the reference for GPT2 and change the colors in Fig 3.
+We will update the reference for GPT2 and change the high-contrast colors in Fig 3.
 
 ## Other Additional Experiments
 The result on the UCR dataset is shown as follows.
