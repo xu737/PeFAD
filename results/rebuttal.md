@@ -1,8 +1,4 @@
 ## Additional Response to Reviewer oEFN
-**details**
-
-(2) We change the colors in Fig 3, as shown in figure below.
-
 
 **Cons 2: Dataset**
 
