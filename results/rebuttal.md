@@ -28,8 +28,8 @@ We adopt FL to address privacy issues where local data is not allowed to be shar
 We change the high-contrast colors in Fig 3, as shown below.
 
 <div style="display: flex;">
-  <img src="https://github.com/xu737/PeFAD/blob/main/results/fscore_change.png" alt="F1-Score" width="30%">
-  <img src="https://github.com/xu737/PeFAD/blob/main/results/ROC_AUC_change.png" alt="AUC-ROC" width="30%">
+  <img src="https://github.com/xu737/PeFAD/blob/main/results/fscore_change.png" alt="F1-Score" width="20%">
+  <img src="https://github.com/xu737/PeFAD/blob/main/results/ROC_AUC_change.png" alt="AUC-ROC" width="20%">
 </div>
 
 
