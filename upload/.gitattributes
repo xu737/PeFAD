@@ -1,0 +1,1 @@
+SWAT_score_results.npy filter=lfs diff=lfs merge=lfs -text
