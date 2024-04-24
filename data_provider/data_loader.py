@@ -24,7 +24,8 @@ class PSMSegLoader(Dataset):
         data = self.scaler.transform(data)
         self.test = self.scaler.transform(test_data)
         self.train = data
-        self.val = self.test
+        data_len = len(self.train)
+        self.val = self.train[(int)(data_len * 0.8):]
         self.test_labels = test_labels
         self.shared = shared
         self.win_size = win_size 
@@ -112,7 +113,8 @@ class MSLSegLoader(Dataset):
         data = self.scaler.transform(data)
         self.test = self.scaler.transform(test_data)
         self.train = data
-        self.val = self.test
+        data_len = len(self.train)
+        self.val = self.train[(int)(data_len * 0.8):]
         self.test_labels = test_labels
         self.shared = shared
         self.win_size = win_size 
@@ -292,7 +294,8 @@ class SWATSegLoader(Dataset):
         test_data = self.scaler.transform(test_data)
         self.train = train_data
         self.test = test_data
-        self.val = test_data
+        data_len = len(self.train)
+        self.val = self.train[(int)(data_len * 0.8):]
         self.test_labels = labels
 
         self.patch_len = patch_len
