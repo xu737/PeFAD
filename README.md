@@ -1,4 +1,4 @@
-# PeFAD: A Parameter-Efficient Federated Framework for Time Series Anomaly Detection (Under Review)
+# PeFAD: A Parameter-Efficient Federated Framework for Time Series Anomaly Detection
 
 ### Train and Evaluate
 You can reproduce the experiment results by running each script in ```./scripts/```:
