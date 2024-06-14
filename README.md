@@ -9,6 +9,17 @@ bash ./scripts/SWAT.sh
 bash ./scripts/MSL.sh
 ```
 
+### Citation
+Please cite the following paper if you use this repository in your research.
+```
+@inproceedings{xu2024pefad,
+  title={PeFAD: A Parameter-Efficient Federated Framework for Time Series Anomaly Detection},
+  author={Xu, Ronghui and Miao, Hao and Wang, Senzhang and Yu, Philip S and Wang, Jianxin},
+  booktitle={SIGKDD},
+  year={2024}
+}
+```
+
 ### Datasets
 
 _**SMD**_, _**PSM**_, _**SWaT**_, and _**MSL**_ can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1gisthCoE-RrKJ0j3KPV7xiibhHWT9qRm).
@@ -29,13 +40,3 @@ _**SMD**_, _**PSM**_, _**SWaT**_, and _**MSL**_ can be downloaded from [Google D
   ```shell
   pip install -r requirements.txt
   ```
-### Citation
-Please cite the following paper if you use this repository in your research.
-```
-@inproceedings{xu2024pefad,
-  title={PeFAD: A Parameter-Efficient Federated Framework for Time Series Anomaly Detection},
-  author={Xu, Ronghui and Miao, Hao and Wang, Senzhang and Yu, Philip S and Wang, Jianxin},
-  booktitle={SIGKDD},
-  year={2024}
-}
-```
