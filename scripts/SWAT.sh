@@ -39,12 +39,12 @@ python -u run.py \
   --gpu 2 \
   --gpt True \
   --consis_loss_coef 2000 \
-  --mask_factor 1.5\
-  --vae_local_epochs 10\
-  --full_tuning 0\
-  --effi_layer 1\
-  --percentile 10\
-  --connection_ratio 0.8\
+  --mask_factor 1.5 \
+  --vae_local_epochs 10 \
+  --full_tuning 0 \
+  --effi_layer 1 \
+  --percentile 10 \
+  --connection_ratio 0.8 \
 
 current_datetime=$(date "+%Y-%m-%d %H:%M")
 echo "Finish time： $current_datetime"
