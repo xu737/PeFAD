@@ -340,6 +340,7 @@ class SWATSegLoader(Dataset):
         
         
         if not self.shared:
+            mask_values = 0
             xb_patch, yb_patch, num_patch = create_patch(sequence_window, label_window, self.patch_len, self.stride)     # xb_patch: [bs x num_patch x n_vars x patch_len]
             # # print(xb_patch.shape)
             if (self.flag == 'test'): 
