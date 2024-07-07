@@ -29,10 +29,10 @@ python -u run.py \
   --c_out 51 \
   --anomaly_ratio 1 \
   --learning_rate 0.0001 \
-  --train_epochs 0 \
+  --train_epochs 1 \
   --local_bs 32 \
   --client_nums 2 \
-  --local_epoch 0 \
+  --local_epoch 1 \
   --patch_len 10 \
   --patch_stride 10 \
   --mask_ratio 0.2 \
