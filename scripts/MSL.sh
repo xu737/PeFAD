@@ -35,7 +35,7 @@ python -u run.py \
 --mask_ratio 0.3 \
 --gpu 2 \
 --gpt True \
---consis_loss_coef 100000  \
+--consis_loss_coef 150000  \
 --mask_factor 2 \
 --vae_local_epochs 20 \
 --full_tuning 0\
