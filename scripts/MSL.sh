@@ -36,13 +36,13 @@ python -u run.py \
 --gpu 2 \
 --gpt True \
 --consis_loss_coef 100000  \
---mask_factor 2\
---vae_local_epochs 20\
+--mask_factor 2 \
+--vae_local_epochs 20 \
 --full_tuning 0\
---effi_layer 1\
---percentile 10\
---connection_ratio 0.6\
---continue_training 0\
+--effi_layer 1 \
+--percentile 10 \
+--connection_ratio 0.6 \
+--continue_training 0 \
 
 
 
