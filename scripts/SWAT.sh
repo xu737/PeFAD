@@ -42,7 +42,7 @@ python -u run.py \
   --mask_factor 1.5 \
   --vae_local_epochs 10 \
   --full_tuning 0 \
-  --effi_layer 1 \
+  --effi_layer 3 \
   --percentile 10 \
   --connection_ratio 0.8 \
 
