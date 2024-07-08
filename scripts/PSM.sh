@@ -27,7 +27,7 @@ python -u run.py \
 --weight_residual 0.4 \
 --anomaly_ratio 1 \
 --learning_rate 0.0001 \
---train_epochs 5 \
+--train_epochs 2 \
 --local_bs 32 \
 --client_nums 4 \
 --local_epoch 1 \
