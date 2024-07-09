@@ -19,7 +19,7 @@ python -u run.py \
 --data PSM \
 --features M \
 --seq_len 100 \
---gpt_layer 4 \
+--gpt_layer 8 \
 --d_model 1280 \
 --d_ff 1280 \
 --enc_in 25 \
