@@ -16,6 +16,7 @@ Please cite the following paper if you use this repository in your research.
   title={PeFAD: A Parameter-Efficient Federated Framework for Time Series Anomaly Detection},
   author={Xu, Ronghui and Miao, Hao and Wang, Senzhang and Yu, Philip S and Wang, Jianxin},
   booktitle={SIGKDD},
+  pages={3621--3632},
   year={2024}
 }
 ```
