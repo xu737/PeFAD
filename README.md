@@ -10,7 +10,7 @@ bash ./scripts/MSL.sh
 ```
 
 ### Citation
-Please cite the following paper if you use this repository in your research.
+Please cite the following paper if this paper/repository is useful for your research.
 ```
 @inproceedings{xu2024pefad,
   title={PeFAD: A Parameter-Efficient Federated Framework for Time Series Anomaly Detection},
